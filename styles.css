@@ -29,7 +29,7 @@ body {
       rgba(0, 0, 0, 0) 70.71%
     ),
     linear-gradient(127deg, rgba(200, 200, 200, 0.7), rgba(0, 0, 0, 0) 65%),
-    linear-gradi*/ent(336deg, rgba(150, 150, 150, 0.7), rgba(0, 0, 0, 0) 70.71%);
+    linear-gradient(336deg, rgba(150, 150, 150, 0.7), rgba(0, 0, 0, 0) 70.71%);*/
 }
 
 
@@ -118,8 +118,17 @@ ul li a:hover {
   margin: auto;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+
+}
+
+.research__container {
+  height: auto;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  
 
 }
 
@@ -350,6 +359,16 @@ ul li a:hover {
   line-height: 1.6;
 }
 
+.research__info {
+  padding: 15px;
+}
+
+
+.research__info p {
+  font-size: 21px;
+  color: #666;
+  line-height: 1.6;
+}
 
 
 
