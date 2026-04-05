@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Across America | Soroush Shahi</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#photos">Photo Collections</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="gotham__header">
+        <h1 class="projects__title gotham__title">Across America</h1>
+        <p class="section__placeholder">A collection of photos from my longest road trip (CHI -> SF)</p>
+      </div>
+      <div class="gallery__container">
+        <div class="gallery__grid">
+          <img src="assets/across_america/sl.jpg" alt="Salt Lake" onclick="openLightbox(this)" />
+          <img src="assets/across_america/colorado.jpg" alt="Colorado" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_1.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_2.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_3.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_4.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_5.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/utah_6.jpg" alt="Utah" onclick="openLightbox(this)" />
+          <img src="assets/across_america/sf.jpg" alt="San Francisco" onclick="openLightbox(this)" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Soroush Shahi. All rights reserved.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      function openLightbox(img) {
+        var lb = document.getElementById('lightbox');
+        document.getElementById('lightbox-img').src = img.src;
+        lb.classList.add('active');
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('active');
+      }
+    </script>
+
+  </body>
+</html>
